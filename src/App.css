@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  background:rgb(214, 216, 216);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlogo{
+  font-weight: 400;
+  font-size: 25px;
+  text-shadow:  5px 5px 10px rgb(107, 106, 106);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.posterimg{
+  width: 18rem !important;
+  height: 27rem !important;
+}
+.buttton{
+  border-radius: 0 !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+ justify-content: center;
+ transition: 0.5s !important;
+}
+.buttton:hover{
+transform: scale(1.5);
+}
+.carddetail{
+border: 1px solid rgb(175, 166, 166);
+width: 290px;
+height: 472px;
+border-radius: 7px;
+overflow: hidden;
+}
+.bttn{
+  background-color: rgb(2, 1, 10) !important;
+  border: none !important;
+}
+.carddetail1{
+width: 300px;
+height: 350px;
+border-radius: 5px;
+overflow: hidden;
+}
+.posterimg1{
+width: 300px;
+height: 400px;
+}
+.kip:hover{
+ filter: opacity(50%);
+}
+.wrapperb{
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+  display: flex;
+}
+.wrapdivone{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  width: 40%;
+  height: 100vh;
 }
+.wrapdivtwo{
+padding: 40px;
+width: 60%;
 
-.App-link {
-  color: #61dafb;
 }
+.wrapdivtwo h1{
+font-size: 70px;
+font-weight: 100;
+color: rgb(179, 180, 180);
+}
+.wrapdivtwo h3{
+  font-weight: 100;
+  }
+  .wrapdivtwo h4{
+   color:line;
+    }
+    
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper458{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inside{
+  width: 500px;
+  height: 300px;
+  border: 1px solid grey;
+  position: relative;
+  bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.inside button{
+background: none;
+}
+.thankyou{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.outside{
+  width: 200px;
+  height: 300px;
+  border: 1px solid grey;
+  margin: 20px;
+  position: relative;
+  bottom: 80px;
+overflow: auto;
 }

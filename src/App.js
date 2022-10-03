@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Curosel from './listingpage/Curosel';
+import Entertain from './listingpage/Entertainment';
+import Hollywood from './listingpage/Hollywood';
+import Movielist from './listingpage/Movielist';
+import Navbar from './listingpage/Navbar';
+import Sport from './listingpage/Sports';
+import Event from './listingpage/Event';
+import Contact from './listingpage/Contact';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Portal from './Portal';
+import Login from './Login';
+import Booking from './Booking';
+import Pagenot from './Pagenot';
+import Theater from './Theater';
+import Thankyou from './Thankyou';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Navbar></Navbar>
+    <Routes>
+    <Route path="/login" element={<Login />}/>
+      <Route path="/" element={<Portal />}/>
+      <Route path="/booking/:id" element={< Booking/>}/>
+      <Route path="/theater" element={< Theater/>}/>
+      <Route path="/thankyou" element={< Thankyou/>}/>
+
+      <Route path="*" element={< Pagenot/>}/>
+    </Routes>
+  </BrowserRouter>
+     
+      
+   
   );
 }
 
